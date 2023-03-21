@@ -10,12 +10,12 @@ public class Mang {
 		int n ;
 	
 		System.out.println("nhap so phan tu mang");
-		n = sc.nextInt()
+		n = sc.nextInt()//thiếu ;
 		a=new int[n];
 		for (int i = 0; i < n; i++) {
 			System.out.println("phan tu thu " + (i + 1));
 			int d=sc.nextInt();
-			a[i] = d// thiếu dấu chấm phẩy
+			a[i] = d//thiếu ;
 		}
 
 	}
@@ -23,7 +23,7 @@ public class Mang {
 	void inmang() {
 		System.out.println("in mang");
 		for(int i = 0; i < a.length; i++) {
-			System.out.print(a[i]+" ")
+			System.out.print(a[i]+" ")//thiếu ;
 		}
 	}
 	void sapxep() {
@@ -45,20 +45,20 @@ public class Mang {
 	}
 	
 	void chenmang(int x,int k) {
-		int []b=new int[a.length];
+		int []b=new int[a.length];//khai báo sai 
 		
 		for(int i=0;i<x;i++) {
 			b[i]=a[i];
 			
 		}
-		for(int j=x+1;j<a.length;j++) {
+		for(int j=x+1;j<a.length;j++) {//thuật toán sai 
 			b[j]=a[j-1];
 		}
-		b[x]=k
+		b[x]=k//thiếu ;
 		a=b;
 	}
 	void xoamang(int x) {
-		int b=new int[a.length+1];
+		int b=new int[a.length+1]; //khai báo sai
 		
 		for(int i=0;i<x;i++) {
 			b[i]=a[i];
@@ -70,8 +70,8 @@ public class Mang {
 		
 		a=b;
 	}
-	public static void updateArray( int oldValue, int newValue) {
-	    for(int i = 0; i < a.length; i++) {
+	public static void updateArray( int oldValue, int newValue) { 
+	    for(int i = 0; i < a.length; i++) { //sai thuật toán 
 	        if(a[i] == oldValue) {
 	            ar[i] = newValue;
 	        }
